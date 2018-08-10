@@ -5,7 +5,7 @@ macro_rules! enum_newtype {
   (
     $(#[$attr:meta])*
     enum $enum:ident {
-      $($variant:ident ($type:ident)),+
+      $($variant:ident ($type:ty)),+
     }
   ) => {
     $(#[$attr])*
