@@ -8,6 +8,12 @@
 The macro `enum_newtype!` expands into an enum definition and implementations of
 `From` and `TryFrom` for each corresponding variant.
 
+Currently `TryFrom` is a nightly feature:
+
+```
+#![feature(try_from)]
+```
+
 *Example*:
 
 ```
